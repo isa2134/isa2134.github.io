@@ -69,7 +69,7 @@ main p::selection{
 }
 
 #primeiros-anos {
-    width: 23rem;
+    width: 22rem;
     margin-left: 15%;
     margin-top: 4%;
     margin-bottom: 4%;
@@ -158,9 +158,10 @@ main #parques{
 }
 
 @media (max-width:600px){
-    #filmes{ width: 25em; }
+    #irmaos{ width:60%; }
+    #primeiros-anos{ width:60%; }
+    #filmes{ width: 70%; }
 }
-
 
 
 
