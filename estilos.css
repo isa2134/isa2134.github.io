@@ -112,7 +112,7 @@ main p::selection{
 
 .voltar-topo{
     background-color: rgb(205, 204, 204);
-    padding: 0.5% 0.5%;
+    padding: 0.5rem 1rem;
     border-radius: 15%;
     position: fixed;
     bottom: 1%;
@@ -191,7 +191,7 @@ main #parques{
         display: block;
         background-color: transparent;
         border: none;
-        font-size: 1em;
+        font-size: 2em;
         margin-top: 0.5em;
         color: white;
     }
