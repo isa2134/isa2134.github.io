@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-body {
+body{
     margin: 0;
     font-family: "Roboto", sans-serif;
     text-align: justify;
@@ -10,63 +10,63 @@ body {
     color: rgb(176, 179, 179);
 }
 
-.pagina_atual {
+.pagina_atual{
     text-decoration: underline;
 }
 
-header {
+header{
     font-size: 1em;
     color: white;
 }
 
-header a {
+header a{
     text-decoration: none;
     color: white;
     font-family: "Inter", sans-serif;
 }
 
-header nav {
+header nav{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding: 0.5rem 10%;
 }
 
-nav ul {
+nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 7rem;
 }
 
-.menu {
+.menu{
     display: none;
 }
 
-header a:hover {
+header a:hover{
     cursor: pointer;
 }
 
-main {
+main{
     margin-left: 10%;
     margin-right: 10%;
 }
 
-main h2 {
+main h2{
     font-family: "Cinzel", serif;
     font-size: 150%;
 }
 
-main video {
+main video{
     width: 100%;
 }
 
-main p::selection {
+main p::selection{
     background-color: white;
     color: #6674b4;
 }
 
-#castelo {
+#castelo{
     width: 100%;
     margin-bottom: 4%;
     border-radius: 2%;
@@ -74,43 +74,43 @@ main p::selection {
     display: none;
 }
 
-#irmaos {
+#irmaos{
     margin-right: 10%;
     margin-bottom: 2.5%;
     margin-top: 4%;
     width: 60rem;
 }
 
-#primeiros-anos {
+#primeiros-anos{
     width: 22rem;
     margin-left: 15%;
     margin-top: 4%;
     margin-bottom: 4%;
 }
 
-#filmes {
+#filmes{
     width: 30rem;
     margin-right: 7%;
     margin-top: 4%;
     margin-bottom: 4%;
 }
 
-.section-images {
+.section-images{
     display: flex;
     align-items: center;
 }
 
-.img {
+.img{
     border-radius: 5%;
     box-shadow: 0 7px 20px black;
 }
 
-.img:hover {
+.img:hover{
     transform: scale(1.1);
     border: 2px solid white;
 }
 
-.voltar-topo {
+.voltar-topo{
     background-color: rgb(205, 204, 204);
     padding: 0.5% 0.5%;
     border-radius: 15%;
@@ -119,71 +119,71 @@ main p::selection {
     right: 0.5%;
 }
 
-footer {
+footer{
     background-color: black;
     padding-top: 2%;
     margin-top: 10%;
 }
 
-footer img {
+footer img{
     margin-left: 45%;
 }
 
-footer p {
+footer p{
     font-size: 60%;
     display: flex;
     justify-content: center;
 }
 
-main a:link {
+main a:link{
     color: rgb(40, 70, 108);
 }
 
-main a:visited {
+main a:visited{
     color: white;
 }
 
-main #parques {
+main #parques{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#parques img {
+#parques img{
     margin-bottom: 3em;
 }
 
-#referencia span {
+#referencia span{
     font-weight: bold;
     color: white;
     display: inline-block;
 }
 
-@media (max-width:1000px) {
-    #section-filmes {
+@media (max-width:1000px){
+    #section-filmes{
         flex-direction: column;
         align-items: center;
     }
 
-    #filmes {
+    #filmes{
         order: 2;
         margin-right: 0;
     }
 }
 
-@media (max-width:900px) {
-    .section-images {
+@media (max-width:900px){
+    .section-images{
         flex-direction: column;
         align-items: center;
     }
 
-    #irmaos {
+    #irmaos{
         width: 20em;
         order: 2;
         margin-right: 0;
     }
 
-    #primeiros-anos {
+    #primeiros-anos{
         margin-left: 0;
     }
     
