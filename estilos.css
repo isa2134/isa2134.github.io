@@ -10,7 +10,7 @@ body {
     color: rgb(176, 179, 179);
 }
 
-.pagina_atual{
+.pagina_atual {
     text-decoration: underline;
 }
 
@@ -22,23 +22,32 @@ header {
 header a {
     text-decoration: none;
     color: white;
+    font-family: "Inter", sans-serif;
 }
 
-header ul{
+header nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    margin-bottom: 0;
-    list-style-type: none;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0.5rem 10%;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+}
+
+.menu {
+    display: none;
+}
 
 header a:hover {
     cursor: pointer;
 }
 
-main{
+main {
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -48,13 +57,13 @@ main h2 {
     font-size: 150%;
 }
 
-main video{
+main video {
     width: 100%;
 }
 
-main p::selection{
+main p::selection {
     background-color: white;
-    color:#6674b4;
+    color: #6674b4;
 }
 
 #castelo {
@@ -86,7 +95,7 @@ main p::selection{
     margin-bottom: 4%;
 }
 
-.section-images{
+.section-images {
     display: flex;
     align-items: center;
 }
@@ -116,59 +125,107 @@ footer {
     margin-top: 10%;
 }
 
-footer img{
+footer img {
     margin-left: 45%;
 }
 
-footer p{
+footer p {
     font-size: 60%;
     display: flex;
     justify-content: center;
 }
 
-main a:link{
-    color:rgb(40, 70, 108);
+main a:link {
+    color: rgb(40, 70, 108);
 }
 
-main a:visited{
+main a:visited {
     color: white;
 }
 
-main #parques{
+main #parques {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#parques img{
+#parques img {
     margin-bottom: 3em;
 }
 
-#referencia span{
+#referencia span {
     font-weight: bold;
     color: white;
     display: inline-block;
 }
 
-@media (max-width:1000px){
-    #section-filmes{ flex-direction: column; align-items: center; }
-    #filmes{ order:2; margin-right:0; }
+@media (max-width:1000px) {
+    #section-filmes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filmes {
+        order: 2;
+        margin-right: 0;
+    }
 }
 
-@media (max-width:900px){
-    .section-images{ flex-direction: column; align-items:center; }
-    #irmaos{ width:20em; order:2; margin-right:0; }
-    #primeiros-anos{ margin-left:0; }
+@media (max-width:900px) {
+    .section-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #irmaos {
+        width: 20em;
+        order: 2;
+        margin-right: 0;
+    }
+
+    #primeiros-anos {
+        margin-left: 0;
+    }
+    
+    .menu{
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+
+    .nav-list{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding-inline-start: 0;
+        background-color: #1A1D29;
+    }
+
+    .nav-list.active{
+        display: flex;
+    }
+
+
 }
 
-@media (max-width:600px){
-    #irmaos{ width:60%; }
-    #primeiros-anos{ width:60%; }
-    #filmes{ width: 70%; }
-    #parques img{ width:60%; }
+@media (max-width:600px) {
+    #irmaos {
+        width: 60%;
+    }
+
+    #primeiros-anos {
+        width: 60%;
+    }
+
+    #filmes {
+        width: 70%;
+    }
+
+    #parques img {
+        width: 60%;
+    }
 }
-
-
-
-
-

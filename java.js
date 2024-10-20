@@ -8,3 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
         castelo.style.display = 'block';
     };
 });
+
+const menuButton = document.querySelector(".menu");
+const navList = document.querySelector(".nav-list");
+
+menuButton.addEventListener("click", (){
+    navList.classList.toggle("active");
+});
